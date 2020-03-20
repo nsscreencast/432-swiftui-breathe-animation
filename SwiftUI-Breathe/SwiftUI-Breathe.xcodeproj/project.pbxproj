@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B585552324183983001CD623 /* SwiftUI-Breathe WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B585552224183983001CD623 /* SwiftUI-Breathe WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B585552924183984001CD623 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B585552724183984001CD623 /* Interface.storyboard */; };
+		B585552B24183984001CD623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B585552A24183984001CD623 /* Assets.xcassets */; };
+		B585553224183984001CD623 /* SwiftUI-Breathe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B585553124183984001CD623 /* SwiftUI-Breathe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B585553724183984001CD623 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585553624183984001CD623 /* ContentView.swift */; };
+		B585553924183984001CD623 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585553824183984001CD623 /* HostingController.swift */; };
+		B585553B24183984001CD623 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585553A24183984001CD623 /* ExtensionDelegate.swift */; };
+		B585553D24183984001CD623 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585553C24183984001CD623 /* NotificationController.swift */; };
+		B585553F24183984001CD623 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B585553E24183984001CD623 /* NotificationView.swift */; };
+		B585554124183985001CD623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B585554024183985001CD623 /* Assets.xcassets */; };
+		B585554424183985001CD623 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B585554324183985001CD623 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B585552424183983001CD623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B585551824183983001CD623 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B585552124183983001CD623;
+			remoteInfo = "SwiftUI-Breathe WatchKit App";
+		};
+		B585553324183984001CD623 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B585551824183983001CD623 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B585553024183984001CD623;
+			remoteInfo = "SwiftUI-Breathe WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B585554C24183985001CD623 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B585553224183984001CD623 /* SwiftUI-Breathe WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B585555024183985001CD623 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B585552324183983001CD623 /* SwiftUI-Breathe WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B585551E24183983001CD623 /* SwiftUI-Breathe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Breathe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B585552224183983001CD623 /* SwiftUI-Breathe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Breathe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B585552824183984001CD623 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B585552A24183984001CD623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B585552C24183984001CD623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B585553124183984001CD623 /* SwiftUI-Breathe WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SwiftUI-Breathe WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B585553624183984001CD623 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B585553824183984001CD623 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		B585553A24183984001CD623 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B585553C24183984001CD623 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B585553E24183984001CD623 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		B585554024183985001CD623 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B585554324183985001CD623 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B585554524183985001CD623 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B585554624183985001CD623 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B585552E24183984001CD623 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B585551724183983001CD623 = {
+			isa = PBXGroup;
+			children = (
+				B585552624183984001CD623 /* SwiftUI-Breathe WatchKit App */,
+				B585553524183984001CD623 /* SwiftUI-Breathe WatchKit Extension */,
+				B585551F24183983001CD623 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B585551F24183983001CD623 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B585551E24183983001CD623 /* SwiftUI-Breathe.app */,
+				B585552224183983001CD623 /* SwiftUI-Breathe WatchKit App.app */,
+				B585553124183984001CD623 /* SwiftUI-Breathe WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B585552624183984001CD623 /* SwiftUI-Breathe WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B585552724183984001CD623 /* Interface.storyboard */,
+				B585552A24183984001CD623 /* Assets.xcassets */,
+				B585552C24183984001CD623 /* Info.plist */,
+			);
+			path = "SwiftUI-Breathe WatchKit App";
+			sourceTree = "<group>";
+		};
+		B585553524183984001CD623 /* SwiftUI-Breathe WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B585553624183984001CD623 /* ContentView.swift */,
+				B585553824183984001CD623 /* HostingController.swift */,
+				B585553A24183984001CD623 /* ExtensionDelegate.swift */,
+				B585553C24183984001CD623 /* NotificationController.swift */,
+				B585553E24183984001CD623 /* NotificationView.swift */,
+				B585554024183985001CD623 /* Assets.xcassets */,
+				B585554524183985001CD623 /* Info.plist */,
+				B585554624183985001CD623 /* PushNotificationPayload.apns */,
+				B585554224183985001CD623 /* Preview Content */,
+			);
+			path = "SwiftUI-Breathe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B585554224183985001CD623 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B585554324183985001CD623 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B585551D24183983001CD623 /* SwiftUI-Breathe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B585555124183985001CD623 /* Build configuration list for PBXNativeTarget "SwiftUI-Breathe" */;
+			buildPhases = (
+				B585551C24183983001CD623 /* Resources */,
+				B585555024183985001CD623 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B585552524183983001CD623 /* PBXTargetDependency */,
+			);
+			name = "SwiftUI-Breathe";
+			productName = "SwiftUI-Breathe";
+			productReference = B585551E24183983001CD623 /* SwiftUI-Breathe.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		B585552124183983001CD623 /* SwiftUI-Breathe WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B585554D24183985001CD623 /* Build configuration list for PBXNativeTarget "SwiftUI-Breathe WatchKit App" */;
+			buildPhases = (
+				B585552024183983001CD623 /* Resources */,
+				B585554C24183985001CD623 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B585553424183984001CD623 /* PBXTargetDependency */,
+			);
+			name = "SwiftUI-Breathe WatchKit App";
+			productName = "SwiftUI-Breathe WatchKit App";
+			productReference = B585552224183983001CD623 /* SwiftUI-Breathe WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B585553024183984001CD623 /* SwiftUI-Breathe WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B585554924183985001CD623 /* Build configuration list for PBXNativeTarget "SwiftUI-Breathe WatchKit Extension" */;
+			buildPhases = (
+				B585552D24183984001CD623 /* Sources */,
+				B585552E24183984001CD623 /* Frameworks */,
+				B585552F24183984001CD623 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI-Breathe WatchKit Extension";
+			productName = "SwiftUI-Breathe WatchKit Extension";
+			productReference = B585553124183984001CD623 /* SwiftUI-Breathe WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B585551824183983001CD623 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = NSScreencast;
+				TargetAttributes = {
+					B585551D24183983001CD623 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					B585552124183983001CD623 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					B585553024183984001CD623 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = B585551B24183983001CD623 /* Build configuration list for PBXProject "SwiftUI-Breathe" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B585551724183983001CD623;
+			productRefGroup = B585551F24183983001CD623 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B585551D24183983001CD623 /* SwiftUI-Breathe */,
+				B585552124183983001CD623 /* SwiftUI-Breathe WatchKit App */,
+				B585553024183984001CD623 /* SwiftUI-Breathe WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B585551C24183983001CD623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B585552024183983001CD623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B585552B24183984001CD623 /* Assets.xcassets in Resources */,
+				B585552924183984001CD623 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B585552F24183984001CD623 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B585554424183985001CD623 /* Preview Assets.xcassets in Resources */,
+				B585554124183985001CD623 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B585552D24183984001CD623 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B585553924183984001CD623 /* HostingController.swift in Sources */,
+				B585553724183984001CD623 /* ContentView.swift in Sources */,
+				B585553D24183984001CD623 /* NotificationController.swift in Sources */,
+				B585553B24183984001CD623 /* ExtensionDelegate.swift in Sources */,
+				B585553F24183984001CD623 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B585552524183983001CD623 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B585552124183983001CD623 /* SwiftUI-Breathe WatchKit App */;
+			targetProxy = B585552424183983001CD623 /* PBXContainerItemProxy */;
+		};
+		B585553424183984001CD623 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B585553024183984001CD623 /* SwiftUI-Breathe WatchKit Extension */;
+			targetProxy = B585553324183984001CD623 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B585552724183984001CD623 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B585552824183984001CD623 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B585554724183985001CD623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B585554824183985001CD623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B585554A24183985001CD623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Breathe WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C2K3864N2N;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SwiftUI-Breathe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsscreencast.SwiftUI-Breathe.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		B585554B24183985001CD623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Breathe WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = C2K3864N2N;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SwiftUI-Breathe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsscreencast.SwiftUI-Breathe.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		B585554E24183985001CD623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2K3864N2N;
+				IBSC_MODULE = SwiftUI_Breathe_WatchKit_Extension;
+				INFOPLIST_FILE = "SwiftUI-Breathe WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsscreencast.SwiftUI-Breathe.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		B585554F24183985001CD623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2K3864N2N;
+				IBSC_MODULE = SwiftUI_Breathe_WatchKit_Extension;
+				INFOPLIST_FILE = "SwiftUI-Breathe WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsscreencast.SwiftUI-Breathe.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		B585555224183985001CD623 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2K3864N2N;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsscreencast.SwiftUI-Breathe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B585555324183985001CD623 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C2K3864N2N;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nsscreencast.SwiftUI-Breathe";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B585551B24183983001CD623 /* Build configuration list for PBXProject "SwiftUI-Breathe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B585554724183985001CD623 /* Debug */,
+				B585554824183985001CD623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B585554924183985001CD623 /* Build configuration list for PBXNativeTarget "SwiftUI-Breathe WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B585554A24183985001CD623 /* Debug */,
+				B585554B24183985001CD623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B585554D24183985001CD623 /* Build configuration list for PBXNativeTarget "SwiftUI-Breathe WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B585554E24183985001CD623 /* Debug */,
+				B585554F24183985001CD623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B585555124183985001CD623 /* Build configuration list for PBXNativeTarget "SwiftUI-Breathe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B585555224183985001CD623 /* Debug */,
+				B585555324183985001CD623 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B585551824183983001CD623 /* Project object */;
+}
